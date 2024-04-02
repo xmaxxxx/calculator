@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    padding: 1px;
+}
+#cal-boby{
+    height: 55%;
+    width:  20%;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);   
+    background-color: rgb(173, 128, 161);
+    padding: 1vw;
+    border-radius: 10px;
+
+}
+#display-numbs{
+    height: 6vh;
+    width:  95%;
+    text-align: right;
+    background-color: rgb(4, 36, 36);
+    border-radius: 0.5vw ;
+    
+}
+#display-numbs>h1{
+    margin-top: 4vh;
+    font-size: 2.5vw;
+    color: white;
+    text-align: right;
+    margin-right: 1vw !important;
+    font-weight: 500;
+}
+#buttons{
+    
+    height: 5vh;
+    width: 22%;
+    background-color: #929387;
+    padding: 1px;
+    border-radius: 0.5vw;
+    margin: 3px;
+}
+#first-line{
+    margin-top: 3vw;
+}
+#first-line .c{
+    height: 5vh;
+    width: 47%;
+}
+#fifth-line .zero{
+    height: 5vh;
+    width: 72%;
+}
+@media screen and (max-width: 600px) {
+    #cal-boby {
+        width: 80%; 
+    }
+    #display-numbs {
+        font-size: 2vw;
+    }
+
+    #buttons {
+        height: 50px; 
+        font-size: 20px;
+    }
+}
